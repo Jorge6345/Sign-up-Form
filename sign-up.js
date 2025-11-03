@@ -8,8 +8,8 @@ const emailInput = document.getElementById("user_email");
 signUpForm.addEventListener("submit", function(event) {
     if (password.value !== passwordConfirmation.value) {
         event.preventDefault();
-        password.value = "";
-        passwordConfirmation.value = "";
+        password.value = null;
+        passwordConfirmation.value = null;
         passMismatchMessage.textContent = "Make sure the passwords match";
         password.style.border = '2px solid rgb(255, 17, 0)';
         passwordConfirmation.style.border = '2px solid rgb(255, 17, 0)';
